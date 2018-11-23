@@ -1,0 +1,532 @@
+/***********
+	RESET
+************/
+
+*,
+*::before,
+*::after{
+	box-sizing: border-box;
+/*    border: 1px solid blue;	*/
+}
+
+body{
+	margin: 0;
+}
+/***********
+ GENERAL STYLES
+************/
+
+html{
+	font-size: 16px;
+	font-family: 'Raleway', sans-serif;
+}
+
+
+.container{
+	max-width: 1170px;
+	margin: 0 auto;
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	
+}
+
+.flex-container{
+	display: flex;
+}
+.hero{
+	background-image: url(../images/herogirl.jpg);
+	background-size: cover;
+	background-position: center;
+	color: #fff;
+    text-align: center;
+}
+.hero .hero-arrow{
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	font-size: 7rem;
+	opacity: .2;
+	cursor: pointer;
+}
+
+
+.hero .flex-container{
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	position: relative;
+	padding-bottom: 120px;
+}
+.hero h1{
+    font-weight: 900;
+    font-size: 4.0625rem;
+	font-style: italic;
+	text-shadow: 10px 2px 12px rgba(0,0,0,0.53);
+    
+}
+
+.hero h2{
+    font-weight: 300;
+    font-size: 1rem;
+    font-family: 'Roboto', italic;
+}
+
+/*
+@media screen and (max-width: 700px) {
+    .hero {
+        width: 100%;
+    }
+}
+*/
+
+/***************************
+      HEADER
+***************************/
+
+/*        BURGER MAKER  start        */
+
+.main-nav{
+	display: flex;
+	margin: 0;
+	padding: 0;
+	list-style: circle;
+}
+
+.burger{
+	display: none;
+}
+
+
+@media all and (max-width: 600px){
+.main-nav{
+	display: none;
+	flex-wrap: wrap;
+}
+
+.main-nav.show{
+	display: block;
+}
+
+.menu-item{
+	width: 100%;
+}
+
+/*
+.burger{
+	display: block;
+	}
+*/
+}
+
+.main-nav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+
+
+/*        BURGER MAKER  end        */
+
+.main-header{
+	position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+	z-index: 2;
+}
+
+.main-header ul{
+	list-style: none;
+	margin: 0;
+	padding: 15px 10px;
+}
+.main-header{
+	background-color: #000;
+}
+.main-header nav a{
+	color: #fff;
+    display: flex;
+	font-size: 0.9rem;
+	text-decoration: none;
+	
+}
+.main-header nav a:hover{
+	font-size: 1.2rem;
+	
+}
+.main-nav a{
+	padding: 0 20px;
+    align-items: center;
+}
+.main-nav > ul{
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+}
+
+/***************************
+     ABOUT ME
+***************************/
+.aprasymas{
+	background-color: #000;
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.aprasymas img{
+	width: 100%;
+	display: block;
+}
+
+.aprasymas > div{
+	width: 50%;
+	text-align: center;
+	color: #fff;
+}
+p{
+	font-weight: 400;
+    font-size: 1rem;
+    font-family: 'Roboto', cursive; 
+}
+.text{
+	padding: 50px 40px 30px 20px;
+}
+
+@media screen and (max-width: 700px) {
+    .aprasymas div{
+        width: 100%;
+    }
+}
+/***************************
+     WHAT I DO
+***************************/
+.whatido{
+	background-color: #64cbc0;
+	background-image: url(../images/overlay.png);
+}
+
+.whatido h1{
+	font-family: "Raleway", serif;
+	font-weight: 800;
+	font-size: 2.5rem;
+	text-align: center;
+}
+
+.whatido h2{
+	text-align: center;
+	font-family: "Roboto", sans-serif;
+	font-weight: 500;
+	font-size: 1.12rem;
+	padding-bottom: 10px;
+}
+
+
+.whatido div{
+	border-radius: 20px;
+	padding-top: 20px;
+	width: 100%;
+	display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+	padding: 10px 20px 15px
+	
+}
+
+.list .whatido-column{
+	display: flex;
+	align-items: flex-start;
+	-webkit-box-shadow: 10px -9px 26px -3px rgba(0,0,0,0.75);
+	-moz-box-shadow: 10px -9px 26px -3px rgba(0,0,0,0.75);
+	box-shadow: 10px -9px 26px -3px rgba(0,0,0,0.75);
+}
+
+.list div{
+	width: 20%;
+	background-color: #000;
+}
+.list h2{
+	font-family: "Raleway", serif;
+	font-size: 2rem;
+	color: #46697c;
+}
+
+.list ul{
+	font-family: 'Raleway', sans-serif;
+	color: #fff;
+	font-size: 0.9rem;
+	padding: 20px;
+	list-style: square;
+}
+
+.whatido-column h2{
+	text-align: center;
+	padding: 0;
+}
+
+@media screen and (max-width: 700px) {
+    .list div {
+        width: 100%;
+    }
+}
+/***************************
+      PRICES
+***************************/
+
+.Pricing{
+	background-color: #fff;
+/*	background-image: url(../images/overlay.png);*/
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	padding-top: 30px;
+	color: #000;
+}
+
+.Pricing .price-list{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+.Pricing h1{
+	font-family: "Raleway", serif;
+	font-weight: 800;
+	font-size: 2.5rem;
+	text-align: center;
+	color: #000;
+}
+
+.price-list div{
+	border-radius: 20px;
+	width: 45%;
+	background-image: url(../images/overlay.png);
+	-webkit-box-shadow: 10px 10px 45px -8px rgba(0,0,0,0.75);
+	-moz-box-shadow: 10px 10px 45px -8px rgba(0,0,0,0.75);
+	box-shadow: 10px 10px 45px -8px rgba(0,0,0,0.75);
+}
+
+.price-list div h4{
+	text-align: center;
+	font-size: 2.5rem;
+	font-weight: 500;
+	
+}
+
+.price-list ul{
+	font-size: 1rem;
+	color: #000;
+}
+
+.price-list ul span{
+	font-size: 2.5rem;
+	color: #2c6879;
+	font-style: italic;
+}
+
+@media screen and (max-width: 700px) {
+    .price-list div{
+        width: 100%;
+    }
+}
+/***************************
+      BLOG
+***************************/
+
+.blog{
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+
+.blog h1{
+	font-weight: 700;
+	font-size: 2rem;
+	font-style: italic;	
+	color: #000;
+}
+
+.blog p{
+	font-family: "Roboto", sans-serif;
+	font-size: 1rem;
+}
+
+.blog .container{
+	background-image: url(../images/overlay.png);
+	display: flex;
+	flex-wrap: wrap;
+	align-content: center;
+	border-radius: 20px;
+	padding: 5%;
+	-webkit-box-shadow: 10px 10px 45px -8px rgba(0,0,0,0.75);
+	-moz-box-shadow: 10px 10px 45px -8px rgba(0,0,0,0.75);
+	box-shadow: 10px 10px 45px -8px rgba(0,0,0,0.75);
+}
+
+.blog h3{
+	font-size: 0.7rem;
+	text-align: right;
+}
+
+.blog .container div{
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+}
+.blog span{
+	font-size: 4rem;
+	font-family: cursive;
+}
+
+
+/****************************************
+        GALLERY
+****************************************/
+
+
+.gallery{
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	padding-top: 30px;
+	background-color: #000;
+	padding-bottom: 20px;
+/*	background-image: url(../images/overlay.png);*/
+}
+
+.gallery h2{
+	color: #fff;
+	font-size: 2rem;
+	text-align: center;
+	padding-bottom: 30px;
+	
+}
+
+.gallery span{
+	font-size: 6rem;
+	color: #fff;
+}
+
+
+/****************************************
+        CONTACTS
+****************************************/
+
+.contacts {
+	background: #212429;
+	color: #fff;
+	padding-bottom: 20px;
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+}
+.contacts h2{
+	color: #fff;
+	font-family: "Roboto", sans-serif;
+	font-size: 1.5rem;
+	font-weight: 300;
+}
+
+.contacts div{
+	justify-content: space-around;
+	
+}
+
+.column1{
+	width: 30%;
+}
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 5px;
+    border: 3px solid #46697c;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 10px;
+/*    resize: vertical;*/
+}
+
+input[type=submit] {
+	font-weight: 800;
+    background-color: #46697c;
+    color: #000;
+	border-radius: 4px;
+    padding: 7px 10px;
+    border: #fff;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #64cbc0;
+}
+
+.address p{
+	list-style: none;
+	font-family: "Roboto", sans-serif;
+	font-size: 0.9rem;
+	font-weight: 300;
+	font-style: italic;
+/*	text-align: center;*/
+}
+
+
+.address h2{
+/*	text-align: center;*/
+}
+
+.column3 img{
+	display:flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	width: 50px;
+	height: 50px;
+	
+}
+
+.column3 i{
+	font-size: 2rem;
+	color: #fff;
+}
+
+
+@media screen and (max-width: 700px) {
+    .column1 {
+        width: 100%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
