@@ -50,6 +50,7 @@ html{
 	font-size: 7rem;
 	opacity: .2;
 	cursor: pointer;
+	color: #2c6879;
 }
 
 
@@ -73,6 +74,11 @@ html{
     font-size: 1rem;
     font-family: 'Roboto', italic;
 }
+
+div .hero-arrow{
+	color: #2c6879;
+}
+
 
 /*
 @media screen and (max-width: 700px) {
@@ -100,7 +106,7 @@ html{
 }
 
 
-@media all and (max-width: 600px){
+@media all and (max-width: 980px){
 .main-nav{
 	display: none;
 	flex-wrap: wrap;
@@ -171,6 +177,7 @@ html{
 	width: 100%;
 }
 
+
 /***************************
      ABOUT ME
 ***************************/
@@ -232,7 +239,7 @@ p{
 
 .whatido div{
 	border-radius: 20px;
-	padding-top: 20px;
+/*	padding-top: 20px;*/
 	width: 100%;
 	display: flex;
     flex-wrap: wrap;
@@ -272,10 +279,11 @@ p{
 	padding: 0;
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 1000px) {
     .list div {
         width: 100%;
     }
+	
 }
 /***************************
       PRICES
@@ -286,8 +294,8 @@ p{
 /*	background-image: url(../images/overlay.png);*/
 	justify-content: center;
 	align-items: center;
-	min-height: 100vh;
-	padding-top: 30px;
+/*	min-height: 100vh;*/
+	padding: 30px;
 	color: #000;
 }
 
@@ -335,6 +343,11 @@ p{
     .price-list div{
         width: 100%;
     }
+/*
+	.Pricing{
+		min-height: 40vh;
+	}
+*/
 }
 /***************************
       BLOG
@@ -343,8 +356,8 @@ p{
 .blog{
 	justify-content: center;
 	align-items: center;
-	min-height: 100vh;
-	padding-top: 30px;
+/*	min-height: 100vh;*/
+	padding: 30px;
 	padding-bottom: 30px;
 }
 
@@ -396,8 +409,8 @@ p{
 .gallery{
 	justify-content: center;
 	align-items: center;
-	min-height: 100vh;
-	padding-top: 30px;
+/*	min-height: 100vh;*/
+	padding: 30px;
 	background-color: #000;
 	padding-bottom: 20px;
 /*	background-image: url(../images/overlay.png);*/
