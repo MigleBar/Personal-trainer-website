@@ -1,11 +1,3 @@
-//<script type="text/javascript">
-//$(document).ready(function(){
-//				$('.burger').click(function(){
-//					$('.main-nav').toggleClass('show');
-//				});
-//			});
-
-
 
 //////////////////////// GALLERY
 
