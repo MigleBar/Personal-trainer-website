@@ -363,51 +363,55 @@ div .prices:hover{
 ***************************/
 
 .blog{
-	justify-content: center;
-	align-items: center;
-	padding: 30px;
-	padding-bottom: 30px;
+    margin: 0 auto;
+    display: grid;
+    text-align: center;
+    padding: 15px;
+    margin: 5px;
 }
 
-.blog h1{
+div.blog{
+    width:30%;
+    border: 5px solid #46697c;
+}
+
+.bloglist{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 20px;
+    justify-content: space-between;   
+}
+
+.blog h1 {
+    font-weight: 800;
+	font-size: 2.5rem;
+}
+.blog h2{
 	font-weight: 700;
 	font-size: 1.4rem;
 	font-style: italic;	
-	color: #000;
+	color: #46697c;
 }
-
 .blog p{
 	font-family: "Rubik", sans-serif;
 	font-size: 1rem;
     font-weight: 300;
 }
 
-.blog .container{
-	background-image: url(../images/overlay.png);
-	display: flex;
-	flex-wrap: wrap;
-	align-content: center;
-	border-radius: 20px;
-	padding: 5%;
-	-webkit-box-shadow: 10px 10px 45px -8px rgba(0,0,0,0.75);
-	-moz-box-shadow: 10px 10px 45px -8px rgba(0,0,0,0.75);
-	box-shadow: 10px 10px 45px -8px rgba(0,0,0,0.75);
-}
-
 .blog h3{
 	font-size: 0.8rem;
-	text-align: center;
-}
-
-.blog .container div{
-	width: 100%;
-	display: flex;
-	flex-wrap: wrap;
 }
 
 .blog span{
 	font-size: 3rem;
 	font-family: cursive;
+}
+
+@media screen and (max-width: 1000px) {
+    div.blog {
+        width: 100%;
+    }
 }
 
 /****************************************
@@ -478,7 +482,6 @@ input[type=submit] {
 	border-radius: 4px;
     padding: 7px 10px;
     border: #fff;
-    cursor: pointer;
 }
 
 input[type=submit]:hover {
@@ -490,7 +493,6 @@ input[type=submit]:hover {
 	font-family: "Rubik", sans-serif;
 	font-size: 1rem;
 	font-weight: 300;
-	font-style: italic;
 }
 
 @media screen and (max-width: 1000px) {
@@ -500,9 +502,9 @@ input[type=submit]:hover {
 }
 
 @media screen and (max-width: 1000px) {
-    .address .column3 {
-        width: 100%;
-        text-align: center;
+    .contacts div{
+        padding-left: 10px;
+        padding-right: 10px;
     }
 }
 
